@@ -1,0 +1,11 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.side-nav {
+  width:450px;
+  margin-top: 70px;
+  position:fixed;
+  height:100%;
+  overflow-y: scroll;
+}

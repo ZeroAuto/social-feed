@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <h1>Social Feed Project</h1>
+  </div>
+</nav>
+
+<div class="side-nav">
+  <% @posts.each do |p| %>
+    <img src="<%= p.image_url %>">
+    <p><%= p.id %></p>
+  <% end %>
+</div>
+
+<div></div>
