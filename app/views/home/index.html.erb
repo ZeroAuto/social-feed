@@ -6,8 +6,14 @@
 
 <div class="side-nav">
   <% @posts.each do |p| %>
-    <img src="<%= p.image_url %>">
-    <p><%= p.id %></p>
+    <div class="feed-post">
+      <div class="side-nav-left">
+        <img src="<%= p.image_url %>">
+      </div>
+      <div class="side-nav-right">
+        <p>Hi, I am feed post # <%= p.id %>.  The date and time is <%= p.created_at %>. Today’s weather forecast is sunny with zero chance of rain. It is a great day to be outside in this beautiful city.</p>
+      </div>
+    </div>
   <% end %>
 </div>
 

@@ -8,4 +8,14 @@
   position:fixed;
   height:100%;
   overflow-y: scroll;
+
+  .side-nav-left {
+    float:left;
+    width:30%;
+  }
+
+  .side-nav-right {
+    float:right;
+    width:70%;
+  }
 }
