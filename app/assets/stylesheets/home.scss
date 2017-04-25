@@ -4,6 +4,10 @@
 
 .header {
   background-color:#F5F5F7;
+
+  a {
+    color:inherit;
+  }
 }
 
 .side-nav {
@@ -22,6 +26,8 @@
     }
 
     .post-text {
+      display:block;
+      overflow:hidden;
       margin:5px;
     }
   }
