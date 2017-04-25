@@ -4,5 +4,6 @@
 
 <div class="feed-post<%= post.id == 1 ? ' top-post' : '' %>">
   <img class="left-image" src="<%= post.image_url %>">
-  <p class="post-text">Hi, I am feed post # <%= post.id %>. The date and time is <%= post.created_at %>. <%= post.body %></p>
+  <p class="post-text">Hi, I am feed post # <%= post.id %>. The date and time is <%= post.created_at %>. 
+  <%= link_to post.body, fetch_post_path(:post_id => post.id), method: :get, :remote => true %></p>
 </div>
