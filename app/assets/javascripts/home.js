@@ -1,3 +1,6 @@
+// normally this would probably be some sort of ajax call that would execute asynchronously
+// but I think this accomplishes a similar effect within a reasonable timeframe
+
 (function($) {
   function compare(a,b) {
     if (a < b)
@@ -21,7 +24,7 @@
     return array;
   }
 
-  function pollResults() {
+  function pollTopics() {
     var topics = ['Sports', 'Weather', 'Food', 'Politics', 'Videogames', 'Movies', 'Television', 'Cars'];
     var mentions = [];
 
@@ -37,6 +40,6 @@
       $(obj).html(`${topics[i]} <span class="count-mentions">${mentions[i]} Mentions</span>`);
     })
   }
-  pollResults();
-  window.setInterval(pollResults, 3000); 
+  pollTopics();
+  window.setInterval(pollTopics, 3000); 
 }(jQuery));
