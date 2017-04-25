@@ -1,1 +1,4 @@
-<p><%= post.body %></p>
+<div class="large-post">
+  <img class="large-left-image" src="<%= post.image_url %>">
+  <p class="large-post-text">Hi, I am feed post # <%= post.id %>. The date and time is <%= post.created_at %>. <%= post.body %></p>
+</div>
