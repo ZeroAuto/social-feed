@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my take on Visit Widget's Social Feed Project
 
-Things you may want to cover:
+At the top is the Header which is a link to the root url. Since I am using Javascript rather than traditional rails views to populate the markup this doesn't take the user to a new location but has the effect of emptying the post view partial on the topic feed.
 
-* Ruby version
+On the left-hand side you should see the required social feed. I have made the mode of each post a link that populates a partial to the right that renders a larger more readable version of the post.
 
-* System dependencies
+On the right-hand is a continuously refreshing ranking of 'Topic Mentions.' In a production setting this would probably have been done with some kind of asynchronous API call but I chose to spoof that with some vanilla Javascript and jQuery.
 
-* Configuration
+Tested in Chrome, Safari and Firefox. Mobile views were tested in Firefox.
 
-* Database creation
+The Usual items:
 
-* Database initialization
+* Ruby version: 2.3.3
 
-* How to run the test suite
+* Rails Version: 5.0.2
 
-* Services (job queues, cache servers, search engines, etc.)
+* Installation: clone repo, run `bundle`, `rake db:setup`, `rails server`
 
-* Deployment instructions
-
-* ...
