@@ -56,9 +56,8 @@
   top:70px;
   left:520px;
   position:absolute;
-  text-align:center;
-  margin:0 auto;
   max-width:400px;
+  margin-right:10px;
 
   h1 {
     text-align:left;
@@ -100,5 +99,11 @@
 
   .side-nav {
     width:100%;
+  }
+}
+
+@media (min-width:920px) {
+  .body {
+    width: 400px;
   }
 }
