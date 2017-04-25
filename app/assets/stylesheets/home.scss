@@ -2,20 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.header {
+  background-color:#F5F5F7;
+}
+
 .side-nav {
-  width:450px;
+  top:0;
+  left:0;
+  width:480px;
   margin-top: 70px;
-  position:fixed;
+  position:absolute;
   height:100%;
   overflow-y: scroll;
-
-  .side-nav-left {
-    float:left;
-    width:30%;
+  
+  .feed-post {
+    .left-image {
+      float:left;
+    }
   }
+}
 
-  .side-nav-right {
-    float:right;
-    width:70%;
-  }
+.body {
+  top:0;
+  right:0;
+  position:absolute;
+  text-align:center;
+  margin:70px auto 0 auto;
 }

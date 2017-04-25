@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="header navbar navbar-default navbar-fixed-top">
   <div class="container">
     <h1>Social Feed Project</h1>
   </div>
@@ -6,15 +6,15 @@
 
 <div class="side-nav">
   <% @posts.each do |p| %>
+    <% unless p.id == 1 %>
+      <hr>
+    <% end %>
     <div class="feed-post">
-      <div class="side-nav-left">
-        <img src="<%= p.image_url %>">
-      </div>
-      <div class="side-nav-right">
-        <p>Hi, I am feed post # <%= p.id %>.  The date and time is <%= p.created_at %>. Today’s weather forecast is sunny with zero chance of rain. It is a great day to be outside in this beautiful city.</p>
-      </div>
+      <img class="left-image" src="<%= p.image_url %>">
+      <p>Hi, I am feed post # <%= p.id %>.  The date and time is <%= p.created_at %>. Today’s weather forecast is sunny with zero chance of rain. It is a great day to be outside in this beautiful city.</p>
     </div>
   <% end %>
 </div>
 
-<div></div>
+<div class="body">
+</div>
