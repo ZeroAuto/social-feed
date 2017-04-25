@@ -17,8 +17,22 @@
   
   .feed-post {
     .left-image {
+      margin:5px;
       float:left;
     }
+
+    .post-text {
+      margin:5px;
+    }
+  }
+
+  .top-post {
+    padding-top: 5px;
+  }
+
+  hr {
+    margin:0;
+    padding: 5px 0 5px;
   }
 }
 
