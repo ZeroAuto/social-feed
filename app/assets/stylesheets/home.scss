@@ -17,10 +17,9 @@
 }
 
 .side-nav {
-  top:0;
+  top:70px;
   left:0;
   width:480px;
-  margin-top: 70px;
   position:absolute;
   height:100%;
   overflow-y: scroll;
@@ -49,11 +48,11 @@
 }
 
 .body {
-  top:0;
+  top:70px;
   left:520px;
   position:absolute;
   text-align:center;
-  margin:70px auto 0 auto;
+  margin:0 auto;
   width:400px;
 
   h1 {
