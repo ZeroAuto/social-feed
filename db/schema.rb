@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170424044047) do
+ActiveRecord::Schema.define(version: 20170425042452) do
 
   create_table "posts", force: :cascade do |t|
     t.datetime "created_at",                                                                                    null: false
     t.datetime "updated_at",                                                                                    null: false
     t.string   "image_url",  default: "https://placeholdit.imgix.net/~text?txtsize=6&txt=50%C3%9750&w=50&h=50"
     t.text     "body"
+    t.datetime "post_time"
   end
 
 end
