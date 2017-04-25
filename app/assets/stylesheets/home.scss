@@ -10,6 +10,10 @@
     color:inherit;
     text-decoration:none;
   }
+
+  h1 {
+    margin-left:5px;
+  }
 }
 
 .side-nav {
@@ -46,8 +50,24 @@
 
 .body {
   top:0;
-  right:0;
+  left:520px;
   position:absolute;
   text-align:center;
   margin:70px auto 0 auto;
+  width:400px;
+
+  h1 {
+    text-align:left;
+  }
+  
+  .mention {
+
+    .mention-name {
+      text-align:left;
+    }
+
+    .count-mentions {
+      float:right;
+    }
+  }
 }
